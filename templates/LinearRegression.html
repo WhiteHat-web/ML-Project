@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Linear Regression</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style id="" media="all"></style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" />
+    <meta name="robots" content="noindex, follow" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
+        <div class="p-4 pt-5">
+          <h1><a href="../index.html" class="logo">Insurance Predictor
+          </a></h1>
+          <ul class="list-unstyled components mb-5" style="margin-top: 3.25rem;"> 
+            <li>
+              <a href="../index.html">About</a>
+            </li>
+            <li>
+              <a href="Predictor.html">Predictor</a>
+            </li>
+            <li>
+              <a
+                href="#pageSubmenu"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle"
+                >Models</a
+              >
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                  <a href="LinearRegression.html">Linear Regression</a>
+                </li>
+                <li>
+                  <a href="RidgeRegression.html">Ridge Regression</a>
+                </li>
+                <li>
+                  <a href="SVR.html">Support Vector Regression</a>
+                </li>
+                <li>
+                  <a href="GB.html">Gradient Boosting Regression</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="References.html">References</a>
+            </li>
+            <li>
+              <a href="Teamdetails.html">Team Details</a>
+            </li>
+          </ul>
+          <div class="footer" style="position: absolute; bottom: 5px; font-size: 1.05rem;">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved
+          </div>
+        </div>
+      </nav>
+
+      <div id="content" class="p-4 p-md-5 pt-5" style="font-size: 1.25rem;">
+        <h2 class="mb-4" style="font-size: 2.5rem;">Linear Regression</h2>
+        <p>
+          Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting. Different regression models differ based on – the kind of relationship between dependent and independent variables they are considering, and the number of independent variables getting used.
+        </p>
+        <!--Div for image-->
+        <div class="container" style="text-align: center; margin-top: 2rem;">
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/linear-regression-plot.jpg" alt="Linear Regression" style="width:40%; height:40%;">
+        </div>
+        <p style="margin-top: 1.5rem;">
+          Our model uses the linear regression model to predict the insurance premium of the customer. On the parameters provided we
+          are getting an accuracy of <b>78.26%</b>.
+        </p>
+      </div>
+    </div>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/popper.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+      integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+      data-cf-beacon='{"rayId":"76894ea89b8ee61e","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.0","si":100}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
